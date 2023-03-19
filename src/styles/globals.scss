@@ -1,0 +1,62 @@
+@forward "./helpers.scss";
+
+:root {
+  --base: 16px;
+  --space-sm: calc(var(--base) / 2);
+  --space-md: calc(var(--base) / 1.5);
+  --space-lg: calc(var(--base) * 1.5);
+
+  --accent: 124, 58, 237;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    #da62c4 30%,
+    white 60%
+  );
+
+  --border-radius: 10px;
+
+  --pale-yellow: #ffffed;
+  --mustard: #dfaf4b;
+  --storm-green: #133831;
+
+  --static-red: #ff4a1c;
+  --coffee: #81523f;
+}
+
+html {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  background-color: var(--pale-yellow);
+  color: var(--storm-green);
+}
+
+h1,
+h2 {
+  font-family: "EB Garamond", serif;
+}
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+body {
+  padding: var(--space-lg);
+}
+nav {
+  max-width: 1380px;
+  margin: 0 auto;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+button {
+  border: none;
+  padding: var(--space-md);
+  background: var(--static-red);
+  cursor: pointer;
+}

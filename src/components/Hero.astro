@@ -1,0 +1,37 @@
+---
+import WaitlistForm from "./WaitlistForm.astro";
+
+function randomHeadline() {
+  return listOfThings[Math.floor(Math.random() * listOfThings.length)];
+}
+
+let listOfThings = [
+  `Be sneaky - make offers on non-listed properties.`,
+  `Make offers on unlisted properties`,
+  `Offer on unlisted gems - beat the crowd.`,
+];
+---
+
+<section class="hero flex">
+  <h1>Make offers on unlisted properties</h1>
+  <WaitlistForm />
+</section>
+<style>
+  h1 {
+    font-size: 9rem;
+    max-width: 50%;
+    line-height: 9rem;
+  }
+  section {
+    background: var(--mustard);
+    min-height: 80vh;
+    width: 100%;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+  }
+
+  .hero {
+    padding: var(--space-lg);
+    width: 100%;
+    justify-content: space-between;
+  }
+</style>
