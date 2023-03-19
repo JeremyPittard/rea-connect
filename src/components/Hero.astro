@@ -9,20 +9,35 @@ let listOfThings = [
   `Be sneaky - make offers on non-listed properties.`,
   `Make offers on unlisted properties`,
   `Seen a house you love? We'll help you propose.`,
+  `Not for sale? Not a problem`,
 ];
 ---
 
 <section class="hero flex">
-  <div>
-    <h1>Seen a house you love? We'll help you propose.</h1>
+  <div class="hero__title">
+    <h1>Not for Sale? Not a problem.</h1>
+    <p>
+      Using ReaConnect you can send anonymous offers to homeowners, to guage
+      their interest in selling.
+    </p>
   </div>
   <WaitlistForm />
 </section>
 <style>
   h1 {
-    font-size: 8rem;
+    font-size: 9rem;
+    line-height: 9rem;
+    max-width: 100%;
+  }
+
+  .hero__title {
     max-width: 50%;
-    line-height: 8rem;
+  }
+
+  p {
+    margin-top: var(--space-lg);
+    font-size: 1.4rem;
+    padding: var(--space-lg) var(--space-sm);
   }
   section {
     background: var(--mustard);
